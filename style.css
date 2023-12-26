@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --color-primary: rgb(95, 111, 82);
+    --color-secondary: rgb(169, 179, 136);
+    --font-color: rgb(254, 250, 224);
+    --btn-color: rgb(185, 148, 112);
+    --font-type: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header {
+    background-color: var(--color-primary);
+}
+.title {
+    font-family: var(--font-type);
+    color: var(--font-color);
+    padding: 1.2rem;
+    border-bottom: 1px solid lightgreen;
+    text-align: center;
+}
+.tip-form {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+}
+label {
+    display: flex;
+    flex-direction: column;
+}
+label > span {
+    font-family: var(--font-type);
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
