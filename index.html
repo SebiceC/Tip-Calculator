@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
     <title>Tip Caculator</title>
 </head>
 <body>
@@ -13,12 +16,22 @@
     <main>
         <form class="tip-form">
             <label for="bill-amount">
-                <span>¿What's the bill amount?</span>
-                <input type="number" id="bill-amount" placeholder="bill amount whitout dots" required>
+                <span>Bill amount:</span>
+                <b>$</b>
+                <input type="number" id="bill-amount" placeholder="ej: 24000" required>
             </label>
             <label for="percentage-tip">
-                <span>¿What's the percentage tip?</span>
-                <input type="number" id="percentage-tip" placeholder="tip whitout percentaje" required>
+                <span>Percentage tip:</span>
+                <input type="number" id="percentage-tip" placeholder="ej: 20" required>
+                <b>%</b>
+            </label>
+            <label for="Number-people">
+                <span>Number of people:</span>
+                <input type="number" id="Number-people" placeholder="ej: 5">
+            </label>
+            <label for="round-up">
+                <span>Round up: </span>
+                <input type="text" id="round-up">
             </label>
             <button type="submit">¡Calcular!</button>
         </form>
