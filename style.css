@@ -33,7 +33,7 @@ main {
     border-bottom: 1px solid var(--font-color);
     text-align: center;
 }
-.tip-form {
+/* .tip-form {
     background-color: var(--color-primary);
     border: 3px solid var(--font-color);
     border-radius: 1rem;
@@ -41,11 +41,8 @@ main {
     display: flex;
     flex-direction: column;
 }
-/* label {
-    /* display: flex;
-    flex-direction: column; */
-/* } */ 
-label > span {
+
+label > span, b {
     color:  var(--font-color);
     font-family: var(--font-type);
     font-size: 1.6rem;
@@ -54,11 +51,9 @@ label > span {
     padding: 1.2rem 0;
 }
 input {
+    text-align: center;
     background-color: var(--font-color);
     border: none;
     border-radius: 0.5rem;
     height: 3.6rem;
-}
-/* input :active {
-    cursor: pointer;
 } */
