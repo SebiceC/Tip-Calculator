@@ -33,27 +33,36 @@ main {
     border-bottom: 1px solid var(--font-color);
     text-align: center;
 }
-/* .tip-form {
+.tip-form{
+    display:  grid;
+    place-content: center;
+    border-radius: 15px;
     background-color: var(--color-primary);
-    border: 3px solid var(--font-color);
-    border-radius: 1rem;
-    padding: 3.6rem;
-    display: flex;
-    flex-direction: column;
+    padding: 2.4rem 3.6rem;
+    height: 50%;
+    width: 50%;
 }
-
-label > span, b {
-    color:  var(--font-color);
+tr > td {
     font-family: var(--font-type);
     font-size: 1.6rem;
-    font-weight: lighter;
-    text-align: center;
-    padding: 1.2rem 0;
+    padding-right: 1.6rem;
+    margin-right: 1.6rem;
 }
-input {
+td > input {
     text-align: center;
-    background-color: var(--font-color);
-    border: none;
-    border-radius: 0.5rem;
-    height: 3.6rem;
-} */
+}
+.btn-calculate, .btn-reset {
+    text-align: center;
+}
+.button{
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    color: var(--font-color);
+}
+@media (max-width: 800px) {
+    .tip-form{
+        width: 80%;
+        height: 35%;
+    }
+}
