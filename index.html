@@ -22,20 +22,20 @@
                             <td>Bill amount:</td>
                             <td>
                                 <b>$</b>
-                                <input type="number" name="billAmount" class="inputNumber" placeholder=" Ej: 120000">
+                                <input type="number" id="billAmount" class="inputNumber" placeholder=" Ej: 120000" required>
                             </td>
                         </tr>
                         <tr>
                             <td>Tip percentage:</td>
                             <td>
-                                <input type="number" name="tipPercentage" class="inputNumber" placeholder="Ej: 10">
+                                <input type="number" id="tipPercentage" class="inputNumber" placeholder="Ej: 10" required>
                                 <b>%</b>
                             </td>
                         </tr>
                         <tr>
-                            <td>People number:</td>
+                            <td>Amount of people:</td>
                             <td>
-                                <input type="number" name="peopleNumber" class="inputNumber" placeholder="Ej: 4">
+                                <input type="number" id="peopleAmount" class="inputNumber" placeholder="Ej: 4" required>
                             </td>
                         </tr>
                         <tr>
@@ -50,27 +50,29 @@
                             <td>Tip amount</td>
                             <td>
                                 <b>$</b>
-                                <input type="number" name="tipAmount">
+                                <span id="tipAmount"></span>
                             </td>
                         </tr>
                         <tr>
                             <td>Total amount to be paid:</td>
                             <td>
                                 <b>$</b>
-                                <input type="number" name="totalAmountPaid">
+                                <span id="total"></span>
                             </td>
                         </tr>
                         <tr>
                             <td>Total per person:</td>
                             <td>
                                 <b>$</b>
-                                <input type="number" name="totalPerPerson">
+                                <span id="totalPersonPay"></span>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                <div id="results"></div>
             </div>
         </form>
     </main>
+    <script src="./tipCalculator.js"></script>
 </body>
 </html>
